@@ -1,7 +1,7 @@
 var express = require("express");
 var alexa = require("alexa-app");
 
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.port || 8080;
 var app = express();
 
 // ALWAYS setup the alexa app and attach it to express before anything else.
@@ -9,7 +9,6 @@ var alexaApp = new alexa.app("test");
 
 alexaApp.express({
   expressApp: app,
-  //router: express.Router(),
 
   // verifies requests come from amazon alexa. Must be enabled for production.
   // You can disable this if you're running a dev environment and want to POST
@@ -43,4 +42,5 @@ alexaApp.intent("nameIntent", {
   }
 );
 
-app.listen(PORT, () => console.log("Listening on port " + PORT + "."));
+app.listen(PORT);
+console.log("Listening on port " + PORT + ", try http://localhost:" + PORT + "/test");

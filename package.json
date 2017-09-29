@@ -1,15 +1,14 @@
 {
-  "name": "alexa-app-example",
-  "version": "0.0.1",
-  "description": "An example Alexa Skill project using the alexa-app module with Express.",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "name": "example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
   "dependencies": {
-    "alexa-app": "^4.0.0",
-    "ejs": "^2.5.6",
-    "express": "^4.15.2"
-  }
+    "body-parser": "^1.13.1",
+    "ejs": "^2.3.1",
+    "express": "^4.13.0",
+    "alexa-app": "^4.2.0"
+  },
+  "author": "Matt Kruse <github@mattkruse.com> (http://mattkruse.com/)",
+  "license": "MIT"
 }
